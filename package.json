@@ -1,0 +1,51 @@
+{
+  "name": "typeOrmGQL",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.1",
+    "@types/graphql": "^14.2.0",
+    "@types/humps": "^1.1.2",
+    "@types/node": "^11.13.8",
+    "@types/pg": "^7.4.14",
+    "@types/ramda": "github:types/npm-ramda#dist",
+    "@types/uuid": "^3.4.4",
+    "cross-env": "^5.2.0",
+    "gql2ts": "^1.10.1",
+    "nodemon": "^1.18.11",
+    "prettier": "^1.17.0",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "apollo-datasource": "0.3.1",
+    "apollo-server": "^2.4.8",
+    "apollo-server-express": "^2.4.8",
+    "axios": "^0.18.0",
+    "base-64": "0.1.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dataloader": "1.4.0",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "graphql": "^14.2.1",
+    "graphql-redis-subscriptions": "^2.1.0",
+    "graphql-tools": "^4.0.4",
+    "gravatar": "^1.8.0",
+    "humps": "^2.0.1",
+    "merge-graphql-schemas": "^1.5.8",
+    "pg": "^7.10.0",
+    "ramda": "^0.26.1",
+    "reflect-metadata": "^0.1.13",
+    "striptags": "^3.1.1",
+    "typeorm": "0.2.16",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "start": "nodemon --exec ts-node --files src/index.ts",
+    "gen-schema-types": "gql2ts src/graphql/typedefs/*.graphql -o src/types/schema.types.d.ts"
+  }
+}
